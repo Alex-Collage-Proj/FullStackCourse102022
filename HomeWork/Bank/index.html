@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>בנק ישראל</title>
 
     <style>
-        div{
+        .box {
             display: inline-block;
         }
     </style>
@@ -19,53 +19,55 @@
         <h1> התחברות לחשבון הבנק ישראל</h1>
     </header>
 
-    <body> 
+    <body>
         <div>
-            <form style=" padding-right:10%">
-                <label>בחר סוג הזדהות:</label>
-                <input type="radio" id="tz" name="typeId" value="tz">
-                  <label for="tz">ת.ז</label>
+            <div class="box" >
+                <form style=" padding-right:10%">
+                    <label>בחר סוג הזדהות:</label>
+                    <input type="radio" id="tz" name="typeId" value="tz">
+                    <label for="tz">ת.ז</label>
 
-                <input type="radio" id="darkon" name="typeId" value="darkon">
-                <label for="darkon">דרכון</label>
+                    <input type="radio" id="darkon" name="typeId" value="darkon">
+                    <label for="darkon">דרכון</label>
 
-                <input type="radio" id="hp" value="hp" name="typeId">
-                <label>ח.פ</label>
+                    <input type="radio" id="hp" value="hp" name="typeId">
+                    <label>ח.פ</label>
 
-                <br><br>
-                <label>מספר מזהה*</label>
-                <input type="text" id="identification">
-                <br><br>
-                <hr>
-                <br>
-                <label> ברצוני לקבל את הקוד הכניסה ל-</label>
-                <input type="radio" id="phone" name="massageaccept" value="phone">
-                <label>נייד</label>
-                <input type="radio" id="email" name="massageaccept" value="email">
-                <label>מייל</label>
-                <br><br>
+                    <br><br>
+                    <label>מספר מזהה*</label>
+                    <input type="text" id="identification">
+                    <br><br>
+                    <hr>
+                    <br>
+                    <label> ברצוני לקבל את הקוד הכניסה ל-</label>
+                    <input type="radio" id="phone" name="massageaccept" value="phone">
+                    <label>נייד</label>
+                    <input type="radio" id="email" name="massageaccept" value="email">
+                    <label>מייל</label>
+                    <br><br>
 
-                <label>טלפון נייד*</label>
-                <input type="text" id="massagesend">
-                <br><br>
-                <hr>
+                    <label>טלפון נייד*</label>
+                    <input type="text" id="massagesend">
+                    <br><br>
+                    <hr>
 
-                <input type="checkbox" name="agreement" id="agreement">
-                <a href="./agreement.html">אני מאשר שקראתי את תנאי השימוש באתר</a>
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <a href="./agreement.html">אני מאשר שקראתי את תנאי השימוש באתר</a>
 
-                <br><br>
-                <span style="padding-right:15em;">
-                    <input type="submit" value="שלח"
-                        style="width:10em; height:2.5em; background: linear-gradient(0deg, rgb(34, 0, 255), rgb(23, 6, 174) 55%, rgb(13, 19, 20), rgb(5, 9, 9) ); color: white;  background: linear-gradient(-1deg, rrgb(32, 29, 29)50%, rgb(25, 0, 255) 50%) ; font-size:20px; border-radius: 1em;">
-                </span>
+                    <br><br>
+                    <span style="padding-right:15em;">
+                        <input type="submit" value="שלח"
+                            style="width:10em; height:2.5em; background: linear-gradient(0deg, rgb(34, 0, 255), rgb(23, 6, 174) 55%, rgb(13, 19, 20), rgb(5, 9, 9) ); color: white;  background: linear-gradient(-1deg, rrgb(32, 29, 29)50%, rgb(25, 0, 255) 50%) ; font-size:20px; border-radius: 1em;">
+                    </span>
 
-            </form>
-        </div>
+                </form>
+            </div>
 
-        <div style=" padding-right:55%" >
-           
-            <img  src="./img/1200px-Bank_of_Israel_Symbol.svg.png" style="width:250px;" alt="israel bank">
-       
+            <div class="box" style="position: absolute; left:2%;">
+
+                <img src="./img/1200px-Bank_of_Israel_Symbol.svg.png" style="width:250px;" alt="israel bank">
+
+            </div>
         </div>
     </body>
 </body>
