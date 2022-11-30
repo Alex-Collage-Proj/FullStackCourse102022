@@ -1,0 +1,40 @@
+h1 {
+    color: aqua;
+    text-decoration: underline;
+}
+
+div#first{
+background-color: blueviolet;
+width: 10cm;
+padding: 10px 10px;
+text-align: right;
+font-size: 20px;
+text-shadow: 2px 1px;
+}
+
+div#second{
+    text-align: left;
+    background-color: rgb(43, 226, 226);
+    width: 10cm;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    display: inline-block;
+    padding: 0 0 0 15px;  
+}
+
+a{
+    color: brown;
+    text-decoration: none;  
+}
+
+img{
+    width: 350px;
+    height: 250px;
+    padding-left: 35em;
+    
+}
