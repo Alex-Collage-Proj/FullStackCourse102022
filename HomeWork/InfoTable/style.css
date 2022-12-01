@@ -1,0 +1,53 @@
+table,
+th,
+td {
+    border: 2px solid black;
+    font-size: 20px;
+    text-align: right;
+}
+
+td {
+    padding: 0px 2px 10px 100px;
+}
+
+#Thursday {
+    background-color: rgba(255, 0, 0, 255);
+}
+
+#log {
+    background-color: grey;
+}
+
+h1 {
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+footer {
+    background-color: yellow;
+}
+
+.main {
+    width: 250px;
+    height: 220px;
+    background-color: rgba(0, 128, 0, 255);
+    border: 5px solid black;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+div {
+    padding-right: 15px;
+}
+
+#box2 {
+    background-color: rgba(0, 255, 255, 255);
+}
+
+a{
+    color: blue;
+}
