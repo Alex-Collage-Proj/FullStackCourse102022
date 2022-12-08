@@ -1,0 +1,47 @@
+@font-face {
+    font-family: AlexBrush;
+    src: url(./Fonts/AlexBrush-Regular.ttf);
+}
+
+@font-face {
+    font-family: Allura-Regular;
+    src: url(./Fonts/Allura-Regular.ttf);
+}
+
+@font-face {
+    font-family: GreatVibes-Regular;
+    src: url(./Fonts/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(./Fonts/Montserrat-Bold.ttf);
+}
+
+
+h1,h2,h3,h4{
+    font-size: 50px;
+}
+
+h1 {
+    font-family: AlexBrush;
+}
+
+h2 {
+    font-family: Allura-Regular;
+}
+
+h3 {
+    font-family: GreatVibes-Regular;
+}
+
+h4 {
+    font-family: Montserrat-Bold;
+}
+
+body {
+    text-align: center;
+    padding: 100px;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+
+}
