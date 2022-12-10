@@ -16,11 +16,13 @@
         <h1>Movies Trailer</h1>
     </header>
 
+
+
     <article>
         <table style="width:50%" class="center">
             <tbody>
                 <tr>
-                    <td onclick="myFunction()">
+                    <td onclick="myFunction('myDIV')">
                         <h3>Megan</h3>
                     </td>
                 </tr>
@@ -39,7 +41,7 @@
                 </tr>
 
                 <tr>
-                    <td onclick="myFunction2()">
+                    <td onclick="myFunction('myDIV2')">
                         <h3>Barbarian</h3>
                     </td>
                 </tr>
@@ -62,7 +64,7 @@
                 </tr>
 
                 <tr>
-                    <td onclick="myFunction3()">
+                    <td onclick="myFunction('myDIV3')">
                         <h3>Smiile</h3>
                     </td>
                 </tr>
@@ -85,7 +87,7 @@
                 </tr>
 
                 <tr>
-                    <td onclick="myFunction4()">
+                    <td onclick="myFunction('myDIV4')">
                         <h3>The Black Phone</h3>
                     </td>
                 </tr>
@@ -108,7 +110,7 @@
                 </tr>
 
                 <tr>
-                    <td onclick="myFunction5()">
+                    <td onclick="myFunction('myDIV5')">
                         <h3>Resident Evil: Welcome to Raccoon City</h3>
                     </td>
                 </tr>
@@ -128,84 +130,110 @@
                         </p>
                     </td>
                 </tr>
+
             </tbody>
         </table>
     </article>
 
 
-    <script>
 
-        var myDIV = document.getElementById("myDIV");
-        var myDIV2 = document.getElementById("myDIV2");
-        var myDIV3 = document.getElementById("myDIV3");
-        var myDIV4 = document.getElementById("myDIV4");
-        var myDIV5 = document.getElementById("myDIV5");
 
-        function myFunction() {
-            if (myDIV.style.display === "none") {
-                myDIV.style.display = "block";
-                // turn off all others
-                myDIV2.style.display = "none";
-                myDIV3.style.display = "none";
-                myDIV4.style.display = "none";
-                myDIV5.style.display = "none";
+    <script >
+
+        function myFunction(name) {
+            var name2 = document.getElementById(name)
+            // name2.style.display = "block"; checking if it respone
+            // alert(name2); checking info it gets
+            if (name2.style.display === "none") {
+                name2.style.display = "block";
+                if (name2 !== myDIV)
+                    myDIV.style.display = "none";
+                if (name2 !== myDIV2)
+                    myDIV2.style.display = "none";
+                if (name2 !== myDIV3)
+                    myDIV3.style.display = "none";
+                if (name2 !== myDIV4)
+                    myDIV4.style.display = "none";
+                if (name2 !== myDIV5)
+                    myDIV5.style.display = "none";
             } else {
-                myDIV.style.display = "none";
+                name2.style.display = "none";
             }
         }
 
-        function myFunction2() {
-            if (myDIV2.style.display === "none") {
-                myDIV2.style.display = "block";
-                // turn off all others
-                myDIV.style.display = "none";
-                myDIV3.style.display = "none";
-                myDIV4.style.display = "none";
-                myDIV5.style.display = "none";
-            } else {
-                myDIV2.style.display = "none";
-            }
-        }
+//======== Good Old way========//
 
-        function myFunction3() {
-            if (myDIV3.style.display === "none") {
-                myDIV3.style.display = "block";
-                // turn off all others
-                myDIV2.style.display = "none";
-                myDIV.style.display = "none";
-                myDIV4.style.display = "none";
-                myDIV5.style.display = "none";
-            } else {
-                myDIV3.style.display = "none";
-            }
-        }
+        // var myDIV = document.getElementById("myDIV");
+        // var myDIV2 = document.getElementById("myDIV2");
+        // var myDIV3 = document.getElementById("myDIV3");
+        // var myDIV4 = document.getElementById("myDIV4");
+        // var myDIV5 = document.getElementById("myDIV5");
 
-        function myFunction4() {
-            if (myDIV4.style.display === "none") {
-                myDIV4.style.display = "block";
-                // turn off all others
-                myDIV2.style.display = "none";
-                myDIV3.style.display = "none";
-                myDIV.style.display = "none";
-                myDIV5.style.display = "none";
-            } else {
-                myDIV4.style.display = "none";
-            }
-        }
+        // function myFunction() {
+            // if (myDIV.style.display === "none") {
+        //         myDIV.style.display = "block";
+        //         // turn off all others
+        //         myDIV2.style.display = "none";
+        //         myDIV3.style.display = "none";
+        //         myDIV4.style.display = "none";
+        //         myDIV5.style.display = "none";
+        //     } else {
+        //         myDIV.style.display = "none";
+        //     }
+        // }
 
-        function myFunction5() {
+        // function myFunction2() {
+        //     if (myDIV2.style.display === "none") {
+        //         myDIV2.style.display = "block";
+        //         // turn off all others
+        //         myDIV.style.display = "none";
+        //         myDIV3.style.display = "none";
+        //         myDIV4.style.display = "none";
+        //         myDIV5.style.display = "none";
+        //     } else {
+        //         myDIV2.style.display = "none";
+        //     }
+        // }
 
-            if (myDIV5.style.display === "none") {
-                myDIV5.style.display = "block";
-                // turn off all others
-                myDIV2.style.display = "none";
-                myDIV3.style.display = "none";
-                myDIV4.style.display = "none";
-                myDIV.style.display = "none";
-            } else {
-                myDIV5.style.display = "none";
-            }
-        }
+        // function myFunction3() {
+        //     if (myDIV3.style.display === "none") {
+        //         myDIV3.style.display = "block";
+        //         // turn off all others
+        //         myDIV2.style.display = "none";
+        //         myDIV.style.display = "none";
+        //         myDIV4.style.display = "none";
+        //         myDIV5.style.display = "none";
+        //     } else {
+        //         myDIV3.style.display = "none";
+        //     }
+        // }
+
+        // function myFunction4() {
+        //     if (myDIV4.style.display === "none") {
+        //         myDIV4.style.display = "block";
+        //         // turn off all others
+        //         myDIV2.style.display = "none";
+        //         myDIV3.style.display = "none";
+        //         myDIV.style.display = "none";
+        //         myDIV5.style.display = "none";
+        //     } else {
+        //         myDIV4.style.display = "none";
+        //     }
+        // }
+
+        // function myFunction5() {
+
+        //     if (myDIV5.style.display === "none") {
+        //         myDIV5.style.display = "block";
+        //         // turn off all others
+        //         myDIV2.style.display = "none";
+        //         myDIV3.style.display = "none";
+        //         myDIV4.style.display = "none";
+        //         myDIV.style.display = "none";
+        //     } else {
+        //         myDIV5.style.display = "none";
+        //     }
+        // }
     </script>
 
 </body>
