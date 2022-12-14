@@ -1,0 +1,37 @@
+.fa-user{
+    color: rgb(89, 251, 35);
+    font-size: 50px;
+    padding-left:115px;
+}
+
+h1{
+    padding-left:45px;  
+    color: rgb(15, 194, 214);
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+.form input[type="checkbox"]{
+    display:none;  
+  }
+  .form input[type="checkbox"] + label.fa {
+      color: #88E2E2;
+      font-size: 25px;
+      width: 150px;
+      height: 25px;
+      cursor: pointer;
+      display: block;
+  }
+  .form input[type="checkbox"]:checked +label.fa{
+      background: #fff;
+  }
+  .form input[type="checkbox"] + label.fa:before {
+       display:inline-block;
+       content: "\f096";
+       cursor:pointer;
+  }
+  
+  .form input[type="checkbox"]:checked +label.fa:before{
+      content:"\f046";
+      position: relative;
+      left: 2px;
+  }
