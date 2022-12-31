@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Noto_Sans_Hebrew";
+    font-weight: 100;
+    src: url(./font_text/Noto_Sans_Hebrew/NotoSansHebrew-VariableFont_wdth\,wght.ttf)
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Noto_Sans_Hebrew, Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: rgba(0, 128, 1, 255);
+    padding: 20px; 
+    font-size: 26px;
+    text-align: right;
+    color: white;    
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: right;
+    width: 20%;
+    height: 480px;
+    /* only for demonstration, should be removed */
+    background: rgba(0, 128, 1, 255);
+    padding: 20px;
+    margin-bottom: 120px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: right;
+    padding: 20px;
+    width: 80%;
+    background-color: #ffffff;
+    height: 300px;
+    /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: rgba(0, 128, 1, 255);
+    padding:1%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#controlP {
+    float: right;
+    word-wrap: break-word;
+    font-size: 30px;
+}
+
+img {
+    float: left;
+    width: 450px;
+    height: 280px;
+}
+
+li{
+    border: 1px solid #000000;
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    background: linear-gradient(
+        to top,
+        rgba(55,84,113,255) 10%,
+        rgba(38,58,82,255) 50%,
+        rgba(34,51,71,255) 50%,
+        rgba(29,47,66,255) 100%
+      );
+}
+
+li,a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    padding-right: 5px;
+    color: #ffffff;  
+}
+
+
+h2{
+    font-size: 30px;
+
+}

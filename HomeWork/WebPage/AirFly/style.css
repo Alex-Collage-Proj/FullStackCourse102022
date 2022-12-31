@@ -1,0 +1,299 @@
+/* Header */
+
+@font-face {
+    font-family: NotoSansHebrew;
+    src: url(./font-text/NotoSansHebrew-Light.ttf);
+}
+
+
+:root {
+    --Mostofcolor: #0b1d33;
+    --paragraf: #9f9f9f;
+    --lilp: #1c1c1c;
+    --footerbackground: #d2edf2;
+    --footerp: #213448;
+    --rastcolor: #21a5c1;
+    --starcolor:#fbce96;
+}
+
+body {
+    font-family: NotoSansHebrew;
+
+    height: 100%;
+    margin: 0;
+    color: var(--Mostofcolor);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.fa-cart-shopping {
+    transform: scale(-1, 1);
+}
+
+header {
+    width: 100%;
+}
+
+#controlorder {
+    float: right;
+    padding-right: 15px;
+    padding-top: 8px;
+}
+
+#breakline {
+    font-size: 30px;
+}
+
+
+section div i {
+    font-size: 25px;
+}
+
+nav,
+#accountdetail,
+#logo {
+    float: right;
+}
+
+#logo {
+    padding-right: 30px;
+    height: 75px;
+    width: 150px;
+}
+
+#title {
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+#accountdetail {
+    float: left;
+    text-align: center;
+    padding-left: 2%;
+}
+
+header nav {
+    padding-top: 35px;
+    padding-right: 15px;
+}
+
+header nav a {
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: inherit;
+}
+
+#logout {
+    text-decoration: none;
+    color: inherit;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 6px;
+    text-align: center;
+    color: aliceblue;
+    background-color:var(--Mostofcolor);
+    font-size: 10px;
+    font-weight: 800;
+}
+
+/* main */
+
+
+#imgcontrol {
+    width: 100%;
+    height: 550px;
+    overflow: auto;
+
+}
+
+#imgcontrol::-webkit-scrollbar {
+    display: none;
+}
+
+
+article section ul {
+    padding-right: 20%;
+}
+
+article section ul li {
+    list-style-type: none;
+    text-align: center;
+    width: 145px;
+    height: 250px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 2%;
+}
+
+
+
+article section ul li h5 div {
+    color: var(--rastcolor);
+}
+
+article section ul li img {
+    width: 90px;
+    height: 195px;
+}
+
+#catologbtn {
+    padding-left: 19%;
+    padding-bottom: 60px;
+}
+
+#catologbtna {
+    text-decoration: none;
+    background-color: #333333;
+    border: none;
+    color: white;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    font-size: 22px;
+}
+
+
+
+article section ul li:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--rastcolor);
+
+}
+
+
+
+/* try */
+.liwarp {
+    position: relative;
+
+}
+
+.divprice:hover {
+    visibility: hidden;
+
+}
+
+
+.divbtn {
+    position: absolute;
+    padding-bottom: 5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+    color: rgb(7, 7, 7);
+    visibility: hidden;
+    opacity: 0;
+    
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.liwarp:hover .divbtn,.divprice {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cartcolor{
+    color:var(--rastcolor)
+}
+
+.starcolor{
+    color: var(--starcolor);
+    padding-right: 5px;
+}
+/* try */
+
+#imgcontrol2 {
+    width: 100%;
+    height: 350px;
+    padding-top: 10px;
+}
+
+#parallax1 {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}
+
+.box {
+    display: inline-block;
+}
+
+.sectioncontrol {
+    padding-right: 150px;
+}
+
+
+.arrowleft {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.arrow {
+    border: solid var(--rastcolor);
+    border-width: 0 6px 6px 0;
+    border-radius: 5%;
+    display: inline-block;
+    padding: 35px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+#rimowa {
+    width: 250px;
+}
+
+p {
+    font-size: 17px;
+    color: var(--paragraf);
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+.bigbox {
+    width: 70%;
+}
+
+#lilp {
+    color: var(--lilp);
+    font-weight: 900;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background: var(--footerbackground);
+
+}
+
+#footer {
+    padding-top: 5%;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--footerp);
+}

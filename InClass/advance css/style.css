@@ -9,6 +9,18 @@ h1{
     color: rgb(15, 194, 214);
 }
 
+.i-circle {
+    display: inline-block;
+    background-color: #090000;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 22px;
+    line-height: 30px; /* set to same size as width, height */
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 .form input[type="checkbox"]{
     display:none;  
